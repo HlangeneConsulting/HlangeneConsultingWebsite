@@ -1,51 +1,93 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+  background-color: #000000;
+  color: #f0f0f0;
+  line-height: 1.6;
   margin: 0;
-  padding: 0;
-  background: #f9f9f9;
-  color: #333;
 }
 
+/* Header */
 header {
-  background: #003f5c;
-  color: white;
+  text-align: center;
+  padding: 5rem 2rem 3rem;
+  background-color: #111;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #e50914; /* red highlight */
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.3rem;
+  color: #ccc;
+}
+
+/* Sections */
+main section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
   padding: 2rem;
+  text-align: center;
+  border-bottom: 1px solid #222;
+  background-color: #000;
+}
+
+main section h2 {
+  font-size: 2rem;
+  color: #e50914;
+  margin-bottom: 1.2rem;
+  border-bottom: 2px solid #e50914;
+  padding-bottom: 0.5rem;
+}
+
+main section p,
+main section ul,
+main section li {
+  font-size: 1.1rem;
+  color: #f0f0f0;
+  max-width: 800px;
+  margin: 0.5rem auto;
   text-align: center;
 }
 
-nav {
-  background: #444;
+main section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  text-align: left;
+}
+
+main section ul li::marker {
+  color: #e50914;
+}
+
+/* Quote Block */
+blockquote {
+  font-style: italic;
+  color: #aaa;
+  background: #111;
   padding: 1rem;
-  text-align: center;
+  border-left: 4px solid #e50914;
+  margin-top: 1rem;
+  max-width: 800px;
 }
 
-nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-nav li {
-  display: inline;
-  margin: 0 1rem;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-main {
-  padding: 2rem;
-}
-
-section {
-  margin-bottom: 2rem;
-}
-
+/* Footer */
 footer {
-  background: #003f5c;
-  color: white;
   text-align: center;
-  padding: 1rem;
+  padding: 2rem;
+  background-color: #111;
+  color: #888;
+  font-size: 0.9rem;
 }
